@@ -28,7 +28,7 @@ export default function Page() {
         </main>
       </div>
 
-      <section id="about" className="section id-card-section">
+      <section id="about" className="section id-card-section my-[5px]">
         <div className="container">
           <div className="card-container">
             <img src="/assets/id-card.jpg" alt="Dollars Capital Circle ID Card" className="id-card-image" />
@@ -37,13 +37,13 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="full-bleed">
+      <div className="full-bleed my-[5px]">
         <div className="container container-wide">
           <DollarsCapitalPerks />
         </div>
       </div>
 
-      <div className="full-bleed">
+      <div className="full-bleed my-[5px]">
         <div className="container container-wide">
           <MentorshipSection />
         </div>

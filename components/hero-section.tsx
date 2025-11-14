@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="hero-copy">
         <h1><span>Dollars</span> Capital Circle</h1>
         <p className="tagline">Exclusive Community for serious trades</p>
-        <a href="/apply" className="btn btn-neo">Apply Now</a>
+        <a href="/forms/dollars-capital" className="btn btn-neo">Apply Now</a>
       </div>
     </div>
   )
