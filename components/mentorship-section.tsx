@@ -1,8 +1,15 @@
 "use client"
 
 import InfiniteStripGallery from "@/components/infinite-strip-gallery"
+import { useSearchParams } from "next/navigation"
 
 export default function MentorshipSection() {
+  const searchParams = useSearchParams()
+  const queryString = searchParams.toString()
+  const mentorshipUrl = `https://dollar.tgbro.link/dollars-capital-circle/mentorship${
+    queryString ? `?${queryString}` : ""
+  }`
+
   const images = Array.from(
     { length: 7 },
     (_, i) => `/assets/mentorship/group-photo${i + 1}.webp`
@@ -28,7 +35,7 @@ export default function MentorshipSection() {
             >
               Learn More
             </a>
-            <a href="/forms/mentorship" className="btn btn-neo">
+            <a href={mentorshipUrl} className="btn btn-neo">
               Talk to Us
             </a>
           </div>
