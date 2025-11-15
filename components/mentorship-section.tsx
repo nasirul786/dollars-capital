@@ -10,13 +10,10 @@ export default function MentorshipSection() {
 
   return (
     <section id="mentorship">
-      {/* The <div className="container"> wrapper has been removed.
-        The "section" and "mentorship-section" classes are also removed.
-      */}
       <div className="mentor-hero">
         <div className="mentor-hero-copy">
           <h2 className="mentor-title">Mentorship Program</h2>
-          <p className="mentor-sub">
+          <p className="mentor-sub subtext">
             Embark on a transformative journey with our Mentorship. Immerse
             yourself in daily live streams during the New York session, where I
             trade for 3–4 hours, sharing expertise to guide your journey to
@@ -59,11 +56,11 @@ export default function MentorshipSection() {
             className="mentor-video-el"
             poster="/assets/mentorship/trailer-thumb.webp"
           />
-          <div className="mentor-video-caption">Mentorship Trailer</div>
+          <div className="mentor-video-caption subtext">Mentorship Trailer</div>
         </div>
         <div className="mentor-info">
           <h3 className="mentor-info-title">What you get</h3>
-          <ul className="mentor-bullets">
+          <ul className="mentor-bullets subtext">
             <li>
               <strong>Exclusive Focus on Gold</strong>
               <br />

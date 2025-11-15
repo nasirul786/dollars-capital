@@ -4,6 +4,27 @@
     url("https://www.yudiz.com/codepen/artificial-intelligence/fonts/good_times/GoodTimesRg-Regular.woff") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Exo ExtraBold Italic";
+  src: url("/fonts/Exo-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Apply Exo ExtraBold Italic to any element using the `subtext` class */
+.subtext {
+  font-family: "Exo ExtraBold Italic", "Good Times Rg", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Keep <strong> readable with the original site font inside .subtext */
+.subtext strong {
+  font-family: "Good Times Rg", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --bg: #0b0b0c;
   --text: #d6d6d6;
@@ -736,3 +757,4 @@ body {
     width: 100%;
   }
 }
+

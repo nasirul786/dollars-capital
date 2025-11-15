@@ -2,11 +2,9 @@ import Link from "next/link"
 
 export default function DollarsCapitalPerks() {
   return (
-    // We keep the classes here to retain the section styling
     <section id="perks" className="section perks">
-      {/* The <div className="container"> wrapper is removed from here */}
       <h2 className="section-title">Perks you unlock</h2>
-      <ul className="perk-list">
+      <ul className="perk-list subtext">
         <li>
           <i className="fa-solid fa-circle-check"></i> Get a chance to be
           officially associated with our Dubai firm for tax benefits
@@ -32,12 +30,7 @@ export default function DollarsCapitalPerks() {
           Sir
         </li>
       </ul>
-      <div className="cta-row">
-        <Link href="/apply" className="btn btn-neo btn-large">
-          Apply Now
-        </Link>
-      </div>
-      {/* The closing </div> for the container is also removed */}
+      
     </section>
   )
 }
